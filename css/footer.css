@@ -1,0 +1,104 @@
+.footer {
+    background-color: var(--color-dark);
+    padding: var(--space-20) 0 0;
+  }
+  
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-12);
+    padding-bottom: var(--space-16);
+    border-bottom: 1px solid var(--color-border-dark);
+  }
+  
+  .footer-brand .nav-logo {
+    margin-bottom: var(--space-6);
+    display: inline-flex;
+  }
+  
+  .footer-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.8;
+    margin-bottom: var(--space-6);
+    max-width: 280px;
+  }
+  
+  .footer-socials {
+    display: flex;
+    gap: var(--space-3);
+  }
+  
+  .footer-socials a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: border-color var(--transition-base),
+                color var(--transition-base);
+  }
+  
+  .footer-socials a:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  
+  .footer-heading {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: var(--space-6);
+  }
+  
+  .footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  
+  .footer-column ul li,
+  .footer-column ul a {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color var(--transition-base);
+  }
+  
+  .footer-column ul a:hover {
+    color: var(--color-accent);
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-6) 0;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .footer-legal {
+    display: flex;
+    gap: var(--space-6);
+  }
+  
+  .footer-legal a {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.3);
+    transition: color var(--transition-base);
+  }
+  
+  .footer-legal a:hover {
+    color: var(--color-accent);
+  }
