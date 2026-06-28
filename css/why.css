@@ -56,3 +56,10 @@
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.8;
   }
+
+  @media (max-width: 768px) {
+    .why-grid {
+      grid-template-columns: 1fr;
+      gap: var(--space-6);
+    }
+  }

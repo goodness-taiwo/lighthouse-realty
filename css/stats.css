@@ -33,3 +33,10 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+
+  @media (max-width: 768px) {
+    .stats-grid {
+      flex-direction: column;
+      gap: var(--space-10);
+    }
+  }

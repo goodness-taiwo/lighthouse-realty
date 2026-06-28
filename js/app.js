@@ -42,3 +42,13 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 statNumbers.forEach(stat => observer.observe(stat));
+
+// hamburger toggle
+
+
+const hamBurger = document.querySelector ('.hamburger')
+const nav = document.querySelector ('.toggle')
+
+hamBurger.addEventListener ('click', () => {
+  nav.classList.toggle('open')
+})

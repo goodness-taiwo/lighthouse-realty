@@ -134,3 +134,22 @@
     animation-delay: 0.8s;
     opacity: 0;
   }
+
+  @media (max-width: 768px) {
+    .hero-search {
+      flex-direction: column;
+      border-radius: 1rem;
+      padding: var(--space-4);
+      gap: var(--space-3);
+    }
+  
+    .hero-search input {
+      width: 100%;
+      padding: var(--space-3);
+    }
+  
+    .hero-search button {
+      width: 100%;
+      text-align: center;
+    }
+  }
