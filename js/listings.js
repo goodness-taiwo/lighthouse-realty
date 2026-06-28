@@ -57,3 +57,22 @@ const formatPrice = (price, status) => {
   
   // Display featured properties on homepage
   renderListings(properties);
+
+
+  
+
+// Card scroll animation
+const cards = document.querySelectorAll('.property-card');
+
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 150);
+      cardObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+cards.forEach(card => cardObserver.observe(card));

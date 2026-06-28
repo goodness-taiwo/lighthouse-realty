@@ -78,3 +78,36 @@ header {
   header.scrolled nav ul a:hover {
     color: var(--color-accent);
   }
+
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    text-decoration: none;
+  }
+  
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+  
+  .logo-main {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    transition: color var(--transition-base);
+  }
+  
+  .logo-sub {
+    font-size: 0.65rem;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    color: var(--color-accent);
+  }
+  
+  header.scrolled .logo-main {
+    color: var(--color-text-primary);
+  }
