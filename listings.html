@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lighthouse Realty</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/stats.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/why.css" />
+    <link rel="stylesheet" href="css/listings.css" />
+  </head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L13.5 7H19L14.5 10.5L16 15.5L12 12L8 15.5L9.5 10.5L5 7H10.5L12 2Z" fill="#c9a84c"/>
+                  <rect x="10" y="16" width="4" height="6" fill="#c9a84c" opacity="0.7"/>
+                  <rect x="8" y="21" width="8" height="1.5" rx="0.75" fill="#c9a84c"/>
+                </svg>
+                <span class="logo-text">
+                  <span class="logo-main">LIGHTHOUSE</span>
+                  <span class="logo-sub">REALTY</span>
+                </span>
+              </a>
+          <ul class="toggle">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Buy</a></li>
+            <li><a href="listings.html">Rent</a></li>
+            <li><a href="saved.html">Saved</a></li>
+          </ul>
+
+          <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </header>
+
+
+   <main>
+      <!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+      <p class="section-eyebrow">Browse Properties</p>
+      <h1 class="page-title">Find Your Perfect Home</h1>
+      <p class="page-subtitle">Explore our full collection of luxury properties for sale and rent</p>
+    </div>
+  </section>
+  
+  <!-- Listings Section -->
+  <section class="listings-section">
+    <div class="container">
+  
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <input 
+          type="text" 
+          id="search-input"
+          class="filter-search" 
+          placeholder="Search by location or name..."
+          aria-label="Search properties"
+        />
+        <select id="filter-status" class="filter-select" aria-label="Filter by status">
+          <option value="all">For Sale & Rent</option>
+          <option value="For Sale">For Sale</option>
+          <option value="For Rent">For Rent</option>
+        </select>
+        <select id="filter-type" class="filter-select" aria-label="Filter by type">
+          <option value="all">All Types</option>
+          <option value="Villa">Villa</option>
+          <option value="Penthouse">Penthouse</option>
+          <option value="Mansion">Mansion</option>
+          <option value="Apartment">Apartment</option>
+          <option value="Chalet">Chalet</option>
+        </select>
+        <select id="filter-price" class="filter-select" aria-label="Filter by price">
+          <option value="all">Any Price</option>
+          <option value="low">Under $5M</option>
+          <option value="mid">$5M — $10M</option>
+          <option value="high">Above $10M</option>
+        </select>
+      </div>
+  
+      <!-- Results Count -->
+      <p class="results-count" id="results-count">Showing all properties</p>
+  
+      <!-- Cards Grid -->
+      <div class="cards-grid" id="listings-grid"></div>
+  
+    </div>
+  </section>
+   </main>
+
+
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+  
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L13.5 7H19L14.5 10.5L16 15.5L12 12L8 15.5L9.5 10.5L5 7H10.5L12 2Z" fill="#c9a84c"/>
+              <rect x="10" y="16" width="4" height="6" fill="#c9a84c" opacity="0.7"/>
+              <rect x="8" y="21" width="8" height="1.5" rx="0.75" fill="#c9a84c"/>
+            </svg>
+            <span class="logo-text">
+              <span class="logo-main">LIGHTHOUSE</span>
+              <span class="logo-sub">REALTY</span>
+            </span>
+          </a>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Twitter">tw</a>
+            <a href="#" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Buy Property</a></li>
+            <li><a href="listings.html">Rent Property</a></li>
+            <li><a href="saved.html">Saved Homes</a></li>
+          </ul>
+        </div>
+  
+        <!-- Property Types -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Property Types</h4>
+          <ul>
+            <li><a href="#">Villas</a></li>
+            <li><a href="#">Penthouses</a></li>
+            <li><a href="#">Mansions</a></li>
+            <li><a href="#">Apartments</a></li>
+            <li><a href="#">Chalets</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact -->
+        <div class="footer-column">
+          <h4 class="footer-heading">Contact</h4>
+          <ul>
+            <li>hello@lighthouserealty.com</li>
+            <li>+1 (555) 000-0000</li>
+            <li>Beverly Hills, California</li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Lighthouse Realty. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/listings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

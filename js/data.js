@@ -1,92 +1,363 @@
 const properties = [
-    {
-      id: 1,
-      title: "Modern Waterfront Villa",
-      location: "Malibu, California",
-      price: 4500000,
-      type: "Villa",
-      status: "For Sale",
-      badge: "Featured",
-      bedrooms: 5,
-      bathrooms: 4,
-      size: 4200,
-      description: "A breathtaking waterfront villa with panoramic ocean views and a private infinity pool.",
-      feature: "Ocean View",
-      image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      id: 2,
-      title: "Downtown Luxury Penthouse",
-      location: "Manhattan, New York",
-      price: 8900000,
-      type: "Penthouse",
-      status: "For Sale",
-      badge: "Exclusive",
-      bedrooms: 4,
-      bathrooms: 3,
-      size: 3800,
-      description: "An iconic penthouse perched above Manhattan with floor to ceiling windows and city skyline views.",
-      feature: "City Skyline View",
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop"
-    },
-    {
-      id: 3,
-      title: "Private Hillside Mansion",
-      location: "Beverly Hills, California",
-      price: 12000000,
-      type: "Mansion",
-      status: "For Sale",
-      badge: "New Listing",
-      bedrooms: 7,
-      bathrooms: 6,
-      size: 8500,
-      description: "A grand hillside mansion offering unrivalled privacy, a home theatre, and resort style amenities.",
-      feature: "Private Pool",
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      id: 4,
-      title: "Elegant Garden Apartment",
-      location: "Kensington, London",
-      price: 12000,
-      type: "Apartment",
-      status: "For Rent",
-      badge: "Featured",
-      bedrooms: 3,
-      bathrooms: 2,
-      size: 1800,
-      description: "A beautifully appointed apartment in the heart of Kensington with a private garden and concierge service.",
-      feature: "Private Garden",
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      id: 5,
-      title: "Beachfront Smart Home",
-      location: "Miami Beach, Florida",
-      price: 6750000,
-      type: "Villa",
-      status: "For Sale",
-      badge: "Exclusive",
-      bedrooms: 5,
-      bathrooms: 5,
-      size: 5100,
-      description: "A cutting edge smart home sitting directly on Miami Beach with automated systems and a private dock.",
-      feature: "Smart Home",
-      image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop"
-    },
-    {
-      id: 6,
-      title: "Alpine Luxury Chalet",
-      location: "Verbier, Switzerland",
-      price: 9500,
-      type: "Chalet",
-      status: "For Rent",
-      badge: "New Listing",
-      bedrooms: 6,
-      bathrooms: 4,
-      size: 4600,
-      description: "An extraordinary alpine chalet with ski in ski out access, a spa, and breathtaking mountain views.",
-      feature: "Ski In Ski Out",
-      image: "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=2069&auto=format&fit=crop"
-    }
-  ];
+  {
+    id: 1,
+    title: "Modern Waterfront Villa",
+    location: "Malibu, California",
+    price: 4500000,
+    type: "Villa",
+    status: "For Sale",
+    badge: "Featured",
+    bedrooms: 5,
+    bathrooms: 4,
+    size: 4200,
+    description: "A breathtaking waterfront villa with panoramic ocean views and a private infinity pool.",
+    feature: "Ocean View",
+    images: [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2074&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 2,
+    title: "Downtown Luxury Penthouse",
+    location: "Manhattan, New York",
+    price: 8900000,
+    type: "Penthouse",
+    status: "For Sale",
+    badge: "Exclusive",
+    bedrooms: 4,
+    bathrooms: 3,
+    size: 3800,
+    description: "An iconic penthouse perched above Manhattan with floor to ceiling windows and city skyline views.",
+    feature: "City Skyline View",
+    images: [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 3,
+    title: "Private Hillside Mansion",
+    location: "Beverly Hills, California",
+    price: 12000000,
+    type: "Mansion",
+    status: "For Sale",
+    badge: "New Listing",
+    bedrooms: 7,
+    bathrooms: 6,
+    size: 8500,
+    description: "A grand hillside mansion offering unrivalled privacy, a home theatre, and resort style amenities.",
+    feature: "Private Pool",
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185008-b033106af5c3?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1599619351208-3e6c839d6828?q=80&w=2072&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 4,
+    title: "Elegant Garden Apartment",
+    location: "Kensington, London",
+    price: 12000,
+    type: "Apartment",
+    status: "For Rent",
+    badge: "Featured",
+    bedrooms: 3,
+    bathrooms: 2,
+    size: 1800,
+    description: "A beautifully appointed apartment in the heart of Kensington with a private garden and concierge service.",
+    feature: "Private Garden",
+    images: [
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 5,
+    title: "Beachfront Smart Home",
+    location: "Miami Beach, Florida",
+    price: 6750000,
+    type: "Villa",
+    status: "For Sale",
+    badge: "Exclusive",
+    bedrooms: 5,
+    bathrooms: 5,
+    size: 5100,
+    description: "A cutting edge smart home sitting directly on Miami Beach with automated systems and a private dock.",
+    feature: "Smart Home",
+    images: [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2057&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2049&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 6,
+    title: "Alpine Luxury Chalet",
+    location: "Verbier, Switzerland",
+    price: 9500,
+    type: "Chalet",
+    status: "For Rent",
+    badge: "New Listing",
+    bedrooms: 6,
+    bathrooms: 4,
+    size: 4600,
+    description: "An extraordinary alpine chalet with ski in ski out access, a spa, and breathtaking mountain views.",
+    feature: "Ski In Ski Out",
+    images: [
+      "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=2069&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2076&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 7,
+    title: "Tuscan countryside Estate",
+    location: "Florence, Italy",
+    price: 7200000,
+    type: "Villa",
+    status: "For Sale",
+    badge: "Exclusive",
+    bedrooms: 8,
+    bathrooms: 7,
+    size: 9200,
+    description: "A magnificent Tuscan estate surrounded by vineyards and olive groves with breathtaking countryside views.",
+    feature: "Vineyard Views",
+    images: [
+      "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 8,
+    title: "Clifftop Ocean Residence",
+    location: "Santorini, Greece",
+    price: 5800000,
+    type: "Villa",
+    status: "For Sale",
+    badge: "Featured",
+    bedrooms: 4,
+    bathrooms: 3,
+    size: 3200,
+    description: "A stunning clifftop residence with iconic white architecture and uninterrupted views of the Aegean Sea.",
+    feature: "Aegean Sea View",
+    images: [
+      "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2069&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?q=80&w=2075&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?q=80&w=2065&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 9,
+    title: "Tropical Beachfront Retreat",
+    location: "Phuket, Thailand",
+    price: 18000,
+    type: "Villa",
+    status: "For Rent",
+    badge: "Featured",
+    bedrooms: 5,
+    bathrooms: 5,
+    size: 4800,
+    description: "An exquisite tropical villa nestled on a private beach with a stunning infinity pool and lush gardens.",
+    feature: "Private Beach",
+    images: [
+      "https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=2073&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540541338537-71cf2de9a7b3?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=2080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584132915807-fd1f5fbc078f?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 10,
+    title: "Desert Modern Masterpiece",
+    location: "Scottsdale, Arizona",
+    price: 3900000,
+    type: "Mansion",
+    status: "For Sale",
+    badge: "New Listing",
+    bedrooms: 5,
+    bathrooms: 4,
+    size: 5600,
+    description: "A striking desert modern home with floor to ceiling glass walls, a resort pool and mountain backdrop.",
+    feature: "Mountain Views",
+    images: [
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2084&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210491892-03d54fall078?q=80&w=2074&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1601760561441-16420502c7e0?q=80&w=2071&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 11,
+    title: "Lakefront Glass Retreat",
+    location: "Geneva, Switzerland",
+    price: 11500000,
+    type: "Mansion",
+    status: "For Sale",
+    badge: "Exclusive",
+    bedrooms: 6,
+    bathrooms: 5,
+    size: 7100,
+    description: "A breathtaking glass mansion on the shores of Lake Geneva with a private jetty and panoramic Alpine views.",
+    feature: "Lake Views",
+    images: [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2074&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1576941089067-2de3c901e126?q=80&w=2078&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 12,
+    title: "Parisian Luxury Apartment",
+    location: "16th Arrondissement, Paris",
+    price: 8500,
+    type: "Apartment",
+    status: "For Rent",
+    badge: "Featured",
+    bedrooms: 3,
+    bathrooms: 2,
+    size: 2100,
+    description: "A refined Haussmann apartment with original parquet floors, high ceilings and views of the Eiffel Tower.",
+    feature: "Eiffel Tower View",
+    images: [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1617098650990-217c55cee0b0?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1549488344-cbb6c34de0fb?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+
+  {
+    id: 13,
+    title: "Oceanfront Coral Villa",
+    location: "Bali, Indonesia",
+    price: 3200000,
+    type: "Villa",
+    status: "For Sale",
+    badge: "New Listing",
+    bedrooms: 4,
+    bathrooms: 4,
+    size: 3800,
+    description: "A serene coral villa perched above the Indian Ocean with a private plunge pool and tropical gardens.",
+    feature: "Ocean View",
+    images: [
+      "https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=2073&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540541338537-71cf2de9a7b3?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1506059612708-99d6c258160e?q=80&w=2069&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?q=80&w=2049&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 14,
+    title: "Royal Garden Manor",
+    location: "Cotswolds, England",
+    price: 6400000,
+    type: "Mansion",
+    status: "For Sale",
+    badge: "Exclusive",
+    bedrooms: 9,
+    bathrooms: 7,
+    size: 11000,
+    description: "A breathtaking English manor surrounded by manicured gardens, a tennis court and a private lake.",
+    feature: "Private Lake",
+    images: [
+      "https://images.unsplash.com/photo-1464146072230-91cabc968266?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1599619351208-3e6c839d6828?q=80&w=2072&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 15,
+    title: "Skyline Penthouse Suite",
+    location: "Dubai, UAE",
+    price: 15000000,
+    type: "Penthouse",
+    status: "For Sale",
+    badge: "Exclusive",
+    bedrooms: 5,
+    bathrooms: 5,
+    size: 6200,
+    description: "An ultra luxury penthouse crowning one of Dubai's most iconic towers with views of the Burj Khalifa.",
+    feature: "Burj Khalifa View",
+    images: [
+      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2096&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?q=80&w=2053&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 16,
+    title: "Harbour View Residence",
+    location: "Sydney, Australia",
+    price: 9200000,
+    type: "Mansion",
+    status: "For Sale",
+    badge: "Featured",
+    bedrooms: 6,
+    bathrooms: 5,
+    size: 6800,
+    description: "A magnificent harbour residence with sweeping views of the Sydney Opera House and Harbour Bridge.",
+    feature: "Harbour Views",
+    images: [
+      "https://images.unsplash.com/photo-1600047509782-20d39509f26d?q=80&w=2084&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2074&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 17,
+    title: "Maldives Water Bungalow",
+    location: "North Male Atoll, Maldives",
+    price: 22000,
+    type: "Villa",
+    status: "For Rent",
+    badge: "Exclusive",
+    bedrooms: 2,
+    bathrooms: 2,
+    size: 1400,
+    description: "An iconic overwater bungalow with a glass floor panel, direct lagoon access and sunset facing deck.",
+    feature: "Overwater Living",
+    images: [
+      "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=2074&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1540202404-a2f29016b523?q=80&w=2033&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1471115853179-bb1d604434e0?q=80&w=2076&auto=format&fit=crop"
+    ]
+  },
+  {
+    id: 18,
+    title: "Riviera Cliffside Retreat",
+    location: "Nice, French Riviera",
+    price: 7800000,
+    type: "Villa",
+    status: "For Sale",
+    badge: "New Listing",
+    bedrooms: 5,
+    bathrooms: 4,
+    size: 4400,
+    description: "A stunning cliffside villa on the French Riviera with Mediterranean views, a heated pool and wine cellar.",
+    feature: "Mediterranean View",
+    images: [
+      "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop"
+    ]
+  }
+];
