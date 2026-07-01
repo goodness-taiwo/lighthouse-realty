@@ -12,6 +12,8 @@ const properties = [
     size: 4200,
     description: "A breathtaking waterfront villa with panoramic ocean views and a private infinity pool.",
     feature: "Ocean View",
+    lat: 34.0259,
+    lng: -118.7798,
     images: [
       "https://images.unsplash.com/photo-1613977257363-707ba9348227?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2074&auto=format&fit=crop",
@@ -32,6 +34,8 @@ const properties = [
     size: 3800,
     description: "An iconic penthouse perched above Manhattan with floor to ceiling windows and city skyline views.",
     feature: "City Skyline View",
+    lat: 40.7580,
+    lng: -73.9855,
     images: [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=2070&auto=format&fit=crop",
@@ -52,6 +56,8 @@ const properties = [
     size: 8500,
     description: "A grand hillside mansion offering unrivalled privacy, a home theatre, and resort style amenities.",
     feature: "Private Pool",
+    lat: 34.0736,
+    lng: -118.4004,
     images: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2080&auto=format&fit=crop",
@@ -72,6 +78,8 @@ const properties = [
     size: 1800,
     description: "A beautifully appointed apartment in the heart of Kensington with a private garden and concierge service.",
     feature: "Private Garden",
+    lat: 51.5006,
+    lng: -0.1924,
     images: [
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop",
@@ -92,6 +100,8 @@ const properties = [
     size: 5100,
     description: "A cutting edge smart home sitting directly on Miami Beach with automated systems and a private dock.",
     feature: "Smart Home",
+    lat: 25.7907,
+    lng: -80.1300,
     images: [
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?q=80&w=2070&auto=format&fit=crop",
@@ -112,6 +122,8 @@ const properties = [
     size: 4600,
     description: "An extraordinary alpine chalet with ski in ski out access, a spa, and breathtaking mountain views.",
     feature: "Ski In Ski Out",
+    lat: 46.0961,
+    lng: 7.2283,
     images: [
       "https://images.unsplash.com/photo-1601918774946-25832a4be0d6?q=80&w=2069&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2076&auto=format&fit=crop",
@@ -121,7 +133,7 @@ const properties = [
   },
   {
     id: 7,
-    title: "Tuscan countryside Estate",
+    title: "Tuscan Countryside Estate",
     location: "Florence, Italy",
     price: 7200000,
     type: "Villa",
@@ -132,6 +144,8 @@ const properties = [
     size: 9200,
     description: "A magnificent Tuscan estate surrounded by vineyards and olive groves with breathtaking countryside views.",
     feature: "Vineyard Views",
+    lat: 43.7696,
+    lng: 11.2558,
     images: [
       "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop",
@@ -152,6 +166,8 @@ const properties = [
     size: 3200,
     description: "A stunning clifftop residence with iconic white architecture and uninterrupted views of the Aegean Sea.",
     feature: "Aegean Sea View",
+    lat: 36.3932,
+    lng: 25.4615,
     images: [
       "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2069&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?q=80&w=2075&auto=format&fit=crop",
@@ -172,6 +188,8 @@ const properties = [
     size: 4800,
     description: "An exquisite tropical villa nestled on a private beach with a stunning infinity pool and lush gardens.",
     feature: "Private Beach",
+    lat: 7.8804,
+    lng: 98.3923,
     images: [
       "https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=2073&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540541338537-71cf2de9a7b3?q=80&w=2070&auto=format&fit=crop",
@@ -192,11 +210,13 @@ const properties = [
     size: 5600,
     description: "A striking desert modern home with floor to ceiling glass walls, a resort pool and mountain backdrop.",
     feature: "Mountain Views",
+    lat: 33.4942,
+    lng: -111.9261,
     images: [
       "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=2084&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600210491892-03d54fall078?q=80&w=2074&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=2070&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1601760561441-16420502c7e0?q=80&w=2071&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1601760561441-16420502c7e0?q=80&w=2071&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070&auto=format&fit=crop"
     ]
   },
   {
@@ -212,6 +232,8 @@ const properties = [
     size: 7100,
     description: "A breathtaking glass mansion on the shores of Lake Geneva with a private jetty and panoramic Alpine views.",
     feature: "Lake Views",
+    lat: 46.2044,
+    lng: 6.1432,
     images: [
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=2074&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop",
@@ -232,6 +254,8 @@ const properties = [
     size: 2100,
     description: "A refined Haussmann apartment with original parquet floors, high ceilings and views of the Eiffel Tower.",
     feature: "Eiffel Tower View",
+    lat: 48.8638,
+    lng: 2.2769,
     images: [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=2080&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?q=80&w=2070&auto=format&fit=crop",
@@ -239,7 +263,6 @@ const properties = [
       "https://images.unsplash.com/photo-1549488344-cbb6c34de0fb?q=80&w=2070&auto=format&fit=crop"
     ]
   },
-
   {
     id: 13,
     title: "Oceanfront Coral Villa",
@@ -253,6 +276,8 @@ const properties = [
     size: 3800,
     description: "A serene coral villa perched above the Indian Ocean with a private plunge pool and tropical gardens.",
     feature: "Ocean View",
+    lat: -8.4095,
+    lng: 115.1889,
     images: [
       "https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=2073&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540541338537-71cf2de9a7b3?q=80&w=2070&auto=format&fit=crop",
@@ -273,6 +298,8 @@ const properties = [
     size: 11000,
     description: "A breathtaking English manor surrounded by manicured gardens, a tennis court and a private lake.",
     feature: "Private Lake",
+    lat: 51.8330,
+    lng: -1.8433,
     images: [
       "https://images.unsplash.com/photo-1464146072230-91cabc968266?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2070&auto=format&fit=crop",
@@ -293,6 +320,8 @@ const properties = [
     size: 6200,
     description: "An ultra luxury penthouse crowning one of Dubai's most iconic towers with views of the Burj Khalifa.",
     feature: "Burj Khalifa View",
+    lat: 25.2048,
+    lng: 55.2708,
     images: [
       "https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=2096&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?q=80&w=2053&auto=format&fit=crop",
@@ -313,6 +342,8 @@ const properties = [
     size: 6800,
     description: "A magnificent harbour residence with sweeping views of the Sydney Opera House and Harbour Bridge.",
     feature: "Harbour Views",
+    lat: -33.8568,
+    lng: 151.2153,
     images: [
       "https://images.unsplash.com/photo-1600047509782-20d39509f26d?q=80&w=2084&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2074&auto=format&fit=crop",
@@ -333,6 +364,8 @@ const properties = [
     size: 1400,
     description: "An iconic overwater bungalow with a glass floor panel, direct lagoon access and sunset facing deck.",
     feature: "Overwater Living",
+    lat: 4.1755,
+    lng: 73.5093,
     images: [
       "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=2074&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1540202404-a2f29016b523?q=80&w=2033&auto=format&fit=crop",
@@ -353,6 +386,8 @@ const properties = [
     size: 4400,
     description: "A stunning cliffside villa on the French Riviera with Mediterranean views, a heated pool and wine cellar.",
     feature: "Mediterranean View",
+    lat: 43.7102,
+    lng: 7.2620,
     images: [
       "https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2075&auto=format&fit=crop",
